@@ -44,7 +44,7 @@ io.on('connection', (cliente) => {
             cliente.broadcast.to(personaBorrada.sala).emit('crearMensaje', crearMensaje('Administrador', `${ personaBorrada.nombre } salió`));
             cliente.broadcast.to(personaBorrada.sala).emit('listaPersona', usuarios.getPersonasPorSala(personaBorrada.sala));
         } catch (err) {
-            console.log("INGRESE DATOS CARRECTAMENTE", err);
+            console.log("VUELVA a la pagiande inicio y INGRESE DATOS CARRECTAMENTE");
         }
 
 
